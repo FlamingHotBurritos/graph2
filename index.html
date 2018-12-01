@@ -9,7 +9,7 @@
 outputs some text in a p element with id="demo".</p>
 
 <script>
-var a0_value;
+var a0;
 var voltage_conductivity;
 var resistance;
 var resistivity;
@@ -18,7 +18,7 @@ var TDS;
 function myFunction() {
     if(cpf){
         //get the value of pin A0
-        a0_value = cpf.get("a0");
+        a0 = cpf.get("a0");
         voltage_conductivity = (a0/1023)*5;
         resistance = ((5*10000)/voltage_conductivity)-10000;
         resistivity = resistance*0.0002/0.01;
